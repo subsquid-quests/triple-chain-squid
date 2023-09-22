@@ -76,6 +76,12 @@
         "cmd": ["node", "lib/bsc/main.js"],
         "hidden": true
       },
+      "process:prod:base": {
+        "description": "Start the squid processor",
+        "deps": ["migration:apply"],
+        "cmd": ["node", "lib/base/main.js"],
+        "hidden": true
+      },
       "serve": {
         "description": "Start the GraphQL API server",
         "cmd": ["squid-graphql-server"]
