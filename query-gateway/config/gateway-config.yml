@@ -3,3 +3,4 @@ send_metrics: true
 available_datasets:
   ethereum-mainnet: "czM6Ly9ldGhlcmV1bS1tYWlubmV0"
   binance-mainnet: "czM6Ly9ic2MtbWFpbm5ldA"
+  base-mainnet: "czM6Ly9iYXNlLW1haW5uZXQ"

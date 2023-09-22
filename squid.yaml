@@ -1,7 +1,7 @@
 manifestVersion: subsquid.io/v0.1
 name: quest-triple-chain-squid
 version: 1
-description: A squid that indexes USDC transfers on ETH and BSC
+description: A squid that indexes USDC transfers on ETH, BSC and Base
 build: 
 deploy:
   addons:
@@ -15,6 +15,10 @@ deploy:
       cmd:
         - node
         - lib/bsc/main
+    - name: base-processor
+      cmd:
+        - node
+        - lib/base/main
   api:
     cmd:
       - npx
