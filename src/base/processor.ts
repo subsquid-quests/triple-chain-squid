@@ -15,7 +15,8 @@ export const BASE_USDBC_ADDRESS = '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA'.t
 export const processor = new EvmBatchProcessor()
     .setDataSource({
         archive: 'http://localhost:8000/network/base-mainnet',
-        chain: 'https://rpc.ankr.com/base',
+        // Disabled for quests to avoid DDoSing Ankr :)
+        //chain: 'https://rpc.ankr.com/base',
     })
     .setFinalityConfirmation(75)
     .setFields({
