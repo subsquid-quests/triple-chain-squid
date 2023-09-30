@@ -123,19 +123,23 @@ A healthy response should look similar to
    ```
    The command should output lines like these:
    ```
-   [api] 22:00:36 WARN  sqd:graphql-server enabling dumb in-memory cache (size: 100mb, ttl: 1000ms, max-age: 1000ms)
-   [api] 22:00:36 INFO  sqd:graphql-server listening on port 4350
-   [eth-processor] 22:00:36 INFO  sqd:processor processing blocks from 16000000
-   [eth-processor] 22:00:36 INFO  sqd:processor using archive data source
-   [eth-processor] 22:00:36 INFO  sqd:processor prometheus metrics are served at port 40163
-   [bsc-processor] 22:00:36 INFO  sqd:processor processing blocks from 28000000
-   [bsc-processor] 22:00:36 INFO  sqd:processor using archive data source
-   [bsc-processor] 22:00:36 INFO  sqd:processor prometheus metrics are served at port 39533
-   [bsc-processor] 22:00:39 INFO  sqd:processor 28004339 / 32107455, rate: 1537 blocks/sec, mapping: 603 blocks/sec, 1157 items/sec, eta: 45m
-   [eth-processor] 22:00:40 INFO  sqd:processor 16005819 / 18226899, rate: 1686 blocks/sec, mapping: 644 blocks/sec, 1224 items/sec, eta: 22m
-   [bsc-processor] 22:00:44 INFO  sqd:processor 28011319 / 32107455, rate: 1503 blocks/sec, mapping: 648 blocks/sec, 1250 items/sec, eta: 46m
+   [eth-processor] 22:54:19 INFO  sqd:processor processing blocks from 16000000
+   [base-processor] 22:54:19 INFO  sqd:processor processing blocks from 3800000
+   [bsc-processor] 22:54:19 INFO  sqd:processor processing blocks from 28000000
+   [bsc-processor] 22:54:19 INFO  sqd:processor using archive data source
+   [base-processor] 22:54:19 INFO  sqd:processor using archive data source
+   [bsc-processor] 22:54:19 INFO  sqd:processor prometheus metrics are served at port 44341
+   [base-processor] 22:54:19 INFO  sqd:processor prometheus metrics are served at port 43297
+   [eth-processor] 22:54:19 INFO  sqd:processor using archive data source
+   [eth-processor] 22:54:19 INFO  sqd:processor prometheus metrics are served at port 38937
+   [api] 22:54:20 WARN  sqd:graphql-server enabling dumb in-memory cache (size: 100mb, ttl: 1000ms, max-age: 1000ms)
+   [api] 22:54:20 INFO  sqd:graphql-server listening on port 4350
+   [eth-processor] 22:54:23 INFO  sqd:processor 16005819 / 18248806, rate: 1631 blocks/sec, mapping: 656 blocks/sec, 1246 items/sec, eta: 23m
+   [eth-processor] 22:54:28 INFO  sqd:processor 16011899 / 18248806, rate: 2210 blocks/sec, mapping: 673 blocks/sec, 1307 items/sec, eta: 17m
+   [bsc-processor] 22:55:27 INFO  sqd:processor 28007279 / 32195252, rate: 108 blocks/sec, mapping: 570 blocks/sec, 1101 items/sec, eta: 10h 50m
+   [bsc-processor] 22:55:32 INFO  sqd:processor 28011319 / 32195252, rate: 161 blocks/sec, mapping: 604 blocks/sec, 1170 items/sec, eta: 7h 14m
    ```
-   The squid should sync in 40-45 minutes. When it's done, stop it with Ctrl-C, then stop and remove the auxiliary containers with
+   The squid should sync in 30-35 minutes. When it's done, stop it with Ctrl-C, then stop and remove the auxiliary containers with
    ```bash
    sqd down
    ```
@@ -144,7 +148,7 @@ A healthy response should look similar to
 
 | Category         | Skill Level                          | Time required (minutes) | Max Participants | Reward                              | Status |
 | ---------------- | ------------------------------------ | ----------------------- | ---------------- | ----------------------------------- | ------ |
-| Squid Deployment | $\textcolor{green}{\textsf{Simple}}$ | ~50                     | -                | $\textcolor{red}{\textsf{750tSQD}}$ | open   |
+| Squid Deployment | $\textcolor{green}{\textsf{Simple}}$ | ~40                     | -                | $\textcolor{red}{\textsf{750tSQD}}$ | open   |
 
 # Acceptance critera
 
